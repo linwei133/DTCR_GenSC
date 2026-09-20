@@ -7,5 +7,6 @@ Generative semantic communication provides a promising paradigm for semantic tra
 <p align="center">
   <img src="./figs/fig_model.png" width="800">
 </p>
+Fig.1 The proposed generative semantic communication system with discrete transmission and continuous-latent reconstruction.
 
 > **Note**: The full source code will be released upon paper acceptance.
