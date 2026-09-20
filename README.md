@@ -7,3 +7,5 @@ Generative semantic communication provides a promising paradigm for semantic tra
 <p align="center">
   <img src="./figs/fig_model.png" width="800">
 </p>
+
+> **Note**: The full source code will be released upon paper acceptance.
