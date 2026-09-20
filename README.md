@@ -8,5 +8,5 @@
 
 
 <p align="center">
-  <img src="./figs/fig_model.pdf" width="800">
+  <img src="./figs/fig_model.png" width="800">
 </p>
