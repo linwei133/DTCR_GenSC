@@ -113,26 +113,6 @@ def main():
         test_cd3m_baseline(args, device)
         return
 
-    if args.mode == "train_sscdm":
-        from comparisons.sscdm_baseline import train_sscdm_baseline
-        sscdm_ckpt = train_sscdm_baseline(args, device)
-        print({"sscdm_ckpt": sscdm_ckpt})
-        return
-
-    if args.mode == "test_sscdm":
-        from comparisons.sscdm_baseline import test_sscdm_baseline
-        test_sscdm_baseline(args, device)
-        return
-
-    if args.mode == "train_test_sscdm":
-        from comparisons.sscdm_baseline import train_sscdm_baseline, test_sscdm_baseline
-        sscdm_ckpt = train_sscdm_baseline(args, device)
-        args.sscdm_ckpt = sscdm_ckpt
-        if torch.cuda.is_available():
-            torch.cuda.empty_cache()
-        test_sscdm_baseline(args, device)
-        return
-
     if args.mode == "train_scdm":
         from comparisons.scdm_baseline import train_scdm_baseline
         scdm_ckpt = train_scdm_baseline(args, device)
@@ -153,10 +133,6 @@ def main():
         test_scdm_baseline(args, device)
         return
 
-    if args.mode == "test_jpeg_ldpc":
-        from comparisons.jpeg_ldpc_baseline import test_jpeg_ldpc_baseline
-        test_jpeg_ldpc_baseline(args, device)
-        return
 
     raise ValueError(f"Unsupported mode: {args.mode}")
 
